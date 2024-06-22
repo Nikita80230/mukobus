@@ -1,0 +1,57 @@
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+
+  src: url("./Montserrat-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+
+  src: url("./Montserrat-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+
+  src: url("./Montserrat-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+
+  src: url("./Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "DMSans";
+  font-style: normal;
+  font-weight: 700;
+
+  src: url("./DMSans-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DMSans";
+  font-style: normal;
+  font-weight: 600;
+
+  src: url("./DMSans-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DMSans";
+  font-style: normal;
+  font-weight: 500;
+
+  src: url("./DMSans-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "DMSans";
+  font-style: normal;
+  font-weight: 400;
+
+  src: url("./DMSans-Regular.ttf") format("truetype");
+}
