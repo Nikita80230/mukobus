@@ -5,6 +5,7 @@ import { StyledHomePage } from "../assets/styles/homePageStyled";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 import BenefitsAndServicesSection from "../components/BenefitsAndServicesSection";
+import ContactsSection from "../components/ContactsSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <BenefitsAndServicesSection />
+        <ContactsSection />
         {/* <Container>
           <h1>Hello world!</h1>
         </Container> */}

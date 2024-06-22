@@ -15,5 +15,14 @@ export const StyledBookButton = styled.button`
   font-size: 24px;
 
   line-height: 1.16667;
-  color: #322a1e;
+
+  .bookButton {
+    color: #322a1e;
+    text-decoration: none;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 24px;
+
+    line-height: 1.16667;
+  }
 `;
