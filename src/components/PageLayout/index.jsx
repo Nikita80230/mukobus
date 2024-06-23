@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Location } from "@reach/router";
 
 import Header from "../Header";
@@ -9,17 +9,20 @@ import { StyledPageLayout } from "./styled";
 import "../../assets/styles/global.css";
 
 const PageLayout = ({ children, location }) => {
+  const [isLightTheme, setIsLightTheme] = useState(false);
   console.log("location-->", location);
   useEffect(() => {
     switch (location.pathname) {
       case "/rent/":
       case "/delivery/":
         document.body.className = "light";
+        setIsLightTheme(true);
 
         break;
 
       default:
         document.body.className = "dark";
+        setIsLightTheme(false);
     }
   }, [location]);
 
@@ -27,7 +30,7 @@ const PageLayout = ({ children, location }) => {
     <>
       {/* <GlobalStyle /> */}
       <StyledPageLayout>
-        <Header />
+        <Header isLightTheme={isLightTheme} pathname={location.pathname} />
         <main>{children}</main>
         <Footer />
       </StyledPageLayout>

@@ -4,7 +4,37 @@ import { Link } from "gatsby";
 import { routes } from "../../constants/routes";
 import Container from "../Container";
 
-const Header = () => {
+const appRoutes = [
+  {
+    pageUrl: routes.HOME,
+    pageName: "Головна",
+  },
+  {
+    pageUrl: `${routes.HOME}#about`,
+    pageName: "Про нас",
+  },
+  {
+    pageUrl: routes.RENT,
+    pageName: "Оренда авто",
+  },
+  {
+    pageUrl: routes.ROUTES,
+    pageName: "Маршрути",
+  },
+  {
+    pageUrl: routes.DELIVERY,
+    pageName: "Посилки",
+  },
+  {
+    pageUrl: `${routes.HOME}#contacts`,
+    pageName: "Контакти",
+  },
+];
+
+const Header = ({ isLightTheme, pathname }) => {
+  // +`${pathname === route.pageUrl + "/" ? "active" : ""}`;
+  const fixedPathname = pathname.sp;
+
   return (
     <StyledHeader>
       <Container>
@@ -15,7 +45,21 @@ const Header = () => {
             </Link>
           </div>
           <nav className="navigation">
-            <Link className="navigationLink" to={routes.HOME}>
+            {appRoutes.map((route) => {
+              return (
+                <Link
+                  activeClassName="active"
+                  className={`navigationLink ${
+                    isLightTheme ? "lightTheme" : "darkTheme"
+                  } `}
+                  to={route.pageUrl}
+                  key={route.pageName}
+                >
+                  {route.pageName}
+                </Link>
+              );
+            })}
+            {/* <Link className="navigationLink" to={routes.HOME}>
               Головна
             </Link>
             <Link className="navigationLink" to={`${routes.HOME}#about`}>
@@ -32,7 +76,7 @@ const Header = () => {
             </Link>
             <Link className="navigationLink" to={`${routes.HOME}#contacts`}>
               Контакти
-            </Link>
+            </Link> */}
           </nav>
         </div>
       </Container>

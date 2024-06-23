@@ -37,6 +37,12 @@ export const StyledHeader = styled.header`
 
     // line-height: 20px;
     line-height: 1.25;
-    color: #f9f9f9;
+    color: ${({ theme }) => theme.colors.white};
+  }
+  .navigationLink.lightTheme {
+    color: ${({ theme }) => theme.colors.black};
+  }
+  .navigationLink.active {
+    color: ${({ theme }) => theme.colors.yellowMainColor};
   }
 `;
