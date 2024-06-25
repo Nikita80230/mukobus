@@ -6,7 +6,10 @@ import DeliverySection from "../components/DeliverySection";
 
 const DeliveryPage = () => {
   return (
-    <PageLayout>
+    <PageLayout
+      title="FlixNikBus | Міжнародна доставка посилок"
+      description="Швидка надійна доставка міжнародних посилок разом з нашим перевізником! Ми пропонуємо ефективні та доступні послуги доставки для бізнесу або особистих потреб"
+    >
       <StyledDeliveryPage>
         <DeliverySection />
       </StyledDeliveryPage>

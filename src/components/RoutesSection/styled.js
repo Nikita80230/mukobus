@@ -8,7 +8,7 @@ export const StyledRoutesSection = styled.section`
   background-repeat: no-repeat;
 
   .routesSection {
-    height: 520px;
+    height: 760px;
 
     padding-top: 120px;
     padding-bottom: 120px;

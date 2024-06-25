@@ -7,8 +7,9 @@ import { StyledPageLayout } from "./styled";
 // import GlobalStyle from "../../assets/styles/globalStyles";
 
 import "../../assets/styles/global.css";
+import SEO from "../SEO";
 
-const PageLayout = ({ children, location }) => {
+const PageLayout = ({ children, location, description, title }) => {
   const [isLightTheme, setIsLightTheme] = useState(false);
   console.log("location-->", location);
   useEffect(() => {
@@ -30,6 +31,7 @@ const PageLayout = ({ children, location }) => {
     <>
       {/* <GlobalStyle /> */}
       <StyledPageLayout>
+        <SEO description={description} title={title} />
         <Header isLightTheme={isLightTheme} pathname={location.pathname} />
         <main>{children}</main>
         <Footer />

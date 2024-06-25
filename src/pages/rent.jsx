@@ -6,7 +6,10 @@ import RentBusSection from "../components/RentBusSection";
 
 const RentPage = () => {
   return (
-    <PageLayout>
+    <PageLayout
+      title="FlixNikBus | Оренда приватного транспорту з водієм"
+      description="Послуга оренди приватного транспорту для індивідуальних поїздок сімейних відпусток комфортних переїздів забезпечує точність маршрутів та графіку"
+    >
       <StyledRentPage>
         <RentBusSection />
       </StyledRentPage>

@@ -9,7 +9,10 @@ import ContactsSection from "../components/ContactsSection";
 
 export default function Home() {
   return (
-    <PageLayout>
+    <PageLayout
+      title="FlixNikBus | Міжнародні пасажирські перевезення"
+      description="Ми забезпечуємо найвищий рівень сервісу у міжнародних перевезеннях пасажирів"
+    >
       <StyledHomePage>
         <HeroSection />
         <AboutSection />

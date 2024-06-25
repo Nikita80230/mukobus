@@ -112,7 +112,6 @@ body {
   line-height: 1;
   font-family: "Montserrat";
 
-  
   /* font-family: 'Times New Roman', Times,  sans-serif; */
 }
 ol,
@@ -148,6 +147,10 @@ body.light{
 }
 body.dark{
   background-color: ${({ theme }) => theme.colors.backgroundBlack};
+}
+
+*{
+  box-sizing: border-box;
 }
 
 `;

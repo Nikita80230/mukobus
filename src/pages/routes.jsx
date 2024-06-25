@@ -5,7 +5,10 @@ import RoutesSection from "../components/RoutesSection";
 
 const RoutesPage = () => {
   return (
-    <PageLayout>
+    <PageLayout
+      title="FlixNikBus | flixnikbus Маршрути "
+      description="Україна - Польща - Німеччина - Нідерланди"
+    >
       <StyledRoutesPage>
         <RoutesSection />
       </StyledRoutesPage>
