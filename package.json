@@ -15,6 +15,7 @@
   "dependencies": {
     "@nfront/global-styles": "^1.2.1",
     "gatsby": "^5.13.5",
+    "gatsby-plugin-react-helmet": "^6.13.1",
     "gatsby-plugin-react-svg": "^3.3.0",
     "gatsby-plugin-styled-components": "^6.13.1",
     "react": "^18.2.0",
