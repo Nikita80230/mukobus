@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../Container";
 
-import heroImg from "../../assets/images/hero-img.png";
+// import heroImg from "../../assets/images/hero-img.png";
 import { StyledHeroSection } from "./styled";
 import BookButton from "../BookButton";
 
@@ -12,9 +12,11 @@ const HeroSection = () => {
         <div className="leftColumn">
           <h1 className="heroTitle">Міжнародні пасажирські перевезення </h1>
           <p className="heroText">
-            З нами надійно та безпечно на кожному етапі вашої подорожі Україна -
-            Німеччина - Нідерланди
+            З нами надійно та безпечно на кожному етапі вашої подорожі
           </p>
+          <span className="heroDirectionSpan">
+            Україна - Польща - Німеччина - Нідерланди
+          </span>
 
           <BookButton />
         </div>

@@ -82,9 +82,8 @@ const BenefitsAndServicesSection = () => {
                 </li>
               </ul>
             </div>
-            {/* <div> */}
-            <img src={servicesImg} alt="bus image" />
-            {/* </div> */}
+
+            <img className="servicesImg" src={servicesImg} alt="bus image" />
           </div>
         </div>
       </Container>

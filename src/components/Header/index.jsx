@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { StyledHeader } from "./styled";
 import { Link } from "gatsby";
 import { routes } from "../../constants/routes";
 import Container from "../Container";
 
-const appRoutes = [
+import OpenBurgerMenuIcon from "../../assets/images/openBurgerMenuButton.inline.svg";
+import CloseBurgerMenuIcon from "../../assets/images/closeBurgerMenuIcon.inline.svg";
+import BurgerMenu from "../BurgerMenu";
+
+export const appRoutes = [
   {
     pageUrl: routes.HOME,
     pageName: "Головна",
@@ -31,9 +35,16 @@ const appRoutes = [
   },
 ];
 
-const Header = ({ isLightTheme, pathname }) => {
-  // +`${pathname === route.pageUrl + "/" ? "active" : ""}`;
-  const fixedPathname = pathname.sp;
+const Header = ({ isLightTheme }) => {
+  const [isBurgerOpen, setIsBurgerOpen] = useState(false);
+
+  useEffect(() => {
+    if (isBurgerOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isBurgerOpen]);
 
   return (
     <StyledHeader>
@@ -59,25 +70,15 @@ const Header = ({ isLightTheme, pathname }) => {
                 </Link>
               );
             })}
-            {/* <Link className="navigationLink" to={routes.HOME}>
-              Головна
-            </Link>
-            <Link className="navigationLink" to={`${routes.HOME}#about`}>
-              Про нас
-            </Link>
-            <Link className="navigationLink" to={routes.RENT}>
-              Оренда авто
-            </Link>
-            <Link className="navigationLink" to={routes.ROUTES}>
-              Маршрути
-            </Link>
-            <Link className="navigationLink" to={routes.DELIVERY}>
-              Посилки
-            </Link>
-            <Link className="navigationLink" to={`${routes.HOME}#contacts`}>
-              Контакти
-            </Link> */}
           </nav>
+          <button
+            className="burgerMenuBtn"
+            type="button"
+            onClick={() => setIsBurgerOpen(!isBurgerOpen)}
+          >
+            {isBurgerOpen ? <CloseBurgerMenuIcon /> : <OpenBurgerMenuIcon />}
+          </button>
+          {isBurgerOpen && <BurgerMenu isLightTheme={isLightTheme} />}
         </div>
       </Container>
     </StyledHeader>

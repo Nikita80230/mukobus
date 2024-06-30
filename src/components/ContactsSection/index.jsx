@@ -48,9 +48,28 @@ const ContactsSection = () => {
           </ul>
           <div className="contactsLinksContainer">
             <div className="iconsWrapper">
-              <Telegram className="contactIcon" />
-              <WhatsApp className="contactIcon" />
-              <Viber className="contactIcon" />
+              <a
+                className="navigationLink"
+                href="https://t.me/"
+                // TODO:
+                target="_blank"
+              >
+                <Telegram className="contactIcon" />
+              </a>
+              <a
+                className="navigationLink"
+                href="https://wa.me/+380985589464"
+                target="_blank"
+              >
+                <WhatsApp className="contactIcon" />
+              </a>
+              <a
+                className="navigationLink"
+                href="viber://chat?number=+380985589464"
+                target="_blank"
+              >
+                <Viber className="contactIcon" />
+              </a>
             </div>
             <div className="contactNumbers">
               <ul className="contactNumbersList">

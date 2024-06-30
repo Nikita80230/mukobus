@@ -143,7 +143,7 @@ html{
 }
 
 body.light{
-  background-color: ${({ theme }) => theme.colors.white};
+  background-color: ${({ theme }) => theme.colors.backgroundWhite};
 }
 body.dark{
   background-color: ${({ theme }) => theme.colors.backgroundBlack};

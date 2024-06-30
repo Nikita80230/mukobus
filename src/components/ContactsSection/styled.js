@@ -104,4 +104,19 @@ export const StyledContactsSection = styled.section`
     line-height: 1.20833;
     color: ${({ theme }) => theme.colors.black};
   }
+
+  /* ==========================================@media (max-width: 564px)===================================================== */
+  @media (max-width: 564px) {
+    background-image: none;
+
+    padding: 43px 0;
+
+    .iconsWrapper {
+      flex-direction: row;
+    }
+
+    .contactsLinksContainer {
+      flex-direction: column;
+    }
+  }
 `;

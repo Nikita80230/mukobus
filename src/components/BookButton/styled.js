@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const StyledBookButton = styled.button`
+  display: block;
   width: 289px;
   padding: 24px 56px;
   height: 76px;
@@ -24,5 +25,9 @@ export const StyledBookButton = styled.button`
     font-size: 24px;
 
     line-height: 1.16667;
+  }
+
+  @media (max-width: 564px) {
+    margin: 0 auto;
   }
 `;

@@ -6,6 +6,11 @@ import aboutSectionImg2 from "../../assets/images/about2.png";
 import aboutSectionImg3 from "../../assets/images/about3.png";
 import aboutSectionImg4 from "../../assets/images/about4.png";
 
+import mobileAboutSectionImg1 from "../../assets/images/mobileAboutSection1.png";
+import mobileAboutSectionImg2 from "../../assets/images/mobileAboutSection2.png";
+import mobileAboutSectionImg3 from "../../assets/images/mobileAboutSection3.png";
+import mobileAboutSectionImg4 from "../../assets/images/mobileAboutSection4.png";
+
 import { StyledAboutSection } from "./styled";
 import BookButton from "../BookButton";
 
@@ -15,10 +20,26 @@ const AboutSection = () => {
       <Container>
         <div className="about">
           <div className="imgGrid">
-            <img src={aboutSectionImg1} alt="image of bus" />
-            <img src={aboutSectionImg2} alt="image of bus" />
-            <img src={aboutSectionImg3} alt="image of bus" />
-            <img src={aboutSectionImg4} alt="image of bus" />
+            <img
+              className="img"
+              src={mobileAboutSectionImg1}
+              alt="image of bus"
+            />
+            <img
+              className="img"
+              src={mobileAboutSectionImg2}
+              alt="image of bus"
+            />
+            <img
+              className="img"
+              src={mobileAboutSectionImg3}
+              alt="image of bus"
+            />
+            <img
+              className="img"
+              src={mobileAboutSectionImg4}
+              alt="image of bus"
+            />
           </div>
           <div className="aboutInfo">
             <h2 className="aboutTitle">Про нас</h2>
