@@ -118,5 +118,12 @@ export const StyledContactsSection = styled.section`
     .contactsLinksContainer {
       flex-direction: column;
     }
+
+    .contactNumberLink {
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.16667;
+      text-align: center;
+    }
   }
 `;
