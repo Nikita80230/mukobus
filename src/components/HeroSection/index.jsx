@@ -1,11 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../Container";
 
 // import heroImg from "../../assets/images/hero-img.png";
 import { StyledHeroSection } from "./styled";
 import BookButton from "../BookButton";
+import BookModal from "../BookModal";
 
-const HeroSection = () => {
+const HeroSection = ({ handleToggleModal }) => {
   return (
     <StyledHeroSection>
       <Container>
@@ -18,8 +19,9 @@ const HeroSection = () => {
             Україна - Польща - Німеччина - Нідерланди
           </span>
 
-          <BookButton />
+          <BookButton handleToggleModal={handleToggleModal} />
         </div>
+
         {/* <img className="heroImg" src={heroImg} alt="image of bus" /> */}
       </Container>
     </StyledHeroSection>

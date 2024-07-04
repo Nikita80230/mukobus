@@ -38,6 +38,10 @@ export const appRoutes = [
 const Header = ({ isLightTheme }) => {
   const [isBurgerOpen, setIsBurgerOpen] = useState(false);
 
+  const handleToggleBurger = () => {
+    setIsBurgerOpen(!isBurgerOpen);
+  };
+
   useEffect(() => {
     if (isBurgerOpen) {
       document.body.style.overflow = "hidden";
@@ -74,11 +78,16 @@ const Header = ({ isLightTheme }) => {
           <button
             className="burgerMenuBtn"
             type="button"
-            onClick={() => setIsBurgerOpen(!isBurgerOpen)}
+            onClick={handleToggleBurger}
           >
             {isBurgerOpen ? <CloseBurgerMenuIcon /> : <OpenBurgerMenuIcon />}
           </button>
-          {isBurgerOpen && <BurgerMenu isLightTheme={isLightTheme} />}
+          {isBurgerOpen && (
+            <BurgerMenu
+              isLightTheme={isLightTheme}
+              handleToggleBurger={handleToggleBurger}
+            />
+          )}
         </div>
       </Container>
     </StyledHeader>

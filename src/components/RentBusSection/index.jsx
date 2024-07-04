@@ -3,7 +3,7 @@ import { StyledRentBusSection } from "./styled";
 import Container from "../Container";
 import BookButton from "../BookButton";
 
-const RentBusSection = () => {
+const RentBusSection = ({ handleToggleModal }) => {
   return (
     <StyledRentBusSection>
       <Container>
@@ -22,7 +22,7 @@ const RentBusSection = () => {
             тривалість оренди та додаткові послуги. Це робить її чудовим вибором
             для тих, хто цінує комфорт, безпеку і гнучкість у подорожах.
           </p>
-          <BookButton />
+          <BookButton handleToggleModal={handleToggleModal} />
         </div>
       </Container>
     </StyledRentBusSection>

@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Location } from "@reach/router";
+import { Toaster } from "react-hot-toast";
+
+import SEO from "../SEO";
 
 import Header from "../Header";
 import Footer from "../Footer";
@@ -7,7 +10,6 @@ import { StyledPageLayout } from "./styled";
 // import GlobalStyle from "../../assets/styles/globalStyles";
 
 import "../../assets/styles/global.css";
-import SEO from "../SEO";
 
 const PageLayout = ({ children, location, description, title }) => {
   const [isLightTheme, setIsLightTheme] = useState(false);
@@ -35,6 +37,7 @@ const PageLayout = ({ children, location, description, title }) => {
         <Header isLightTheme={isLightTheme} pathname={location.pathname} />
         <main>{children}</main>
         <Footer />
+        <Toaster />
       </StyledPageLayout>
     </>
   );

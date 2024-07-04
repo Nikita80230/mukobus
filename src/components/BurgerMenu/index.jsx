@@ -3,7 +3,7 @@ import { StyledBurgerMenu } from "./styled";
 import { appRoutes } from "../Header";
 import { Link } from "gatsby";
 
-const BurgerMenu = ({ isLightTheme }) => {
+const BurgerMenu = ({ isLightTheme, handleToggleBurger }) => {
   return (
     <StyledBurgerMenu
       className={`burgerMenu ${isLightTheme ? "lightTheme" : "darkTheme"} `}
@@ -18,6 +18,7 @@ const BurgerMenu = ({ isLightTheme }) => {
               } `}
               to={route.pageUrl}
               key={route.pageName}
+              onClick={handleToggleBurger}
             >
               {route.pageName}
             </Link>

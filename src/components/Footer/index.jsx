@@ -39,7 +39,9 @@ const Footer = () => {
           </div>
 
           <div className="bottomFooter">
-            <span>Copyright © 2024 Flixnikbus | All Rights Reserved </span>
+            <span className="bottomFooterSpan">
+              Copyright © 2024 Flixnikbus | All Rights Reserved{" "}
+            </span>
           </div>
         </div>
         <div className="divider"></div>

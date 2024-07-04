@@ -40,12 +40,12 @@ s,
 samp,
 small,
 strike,
-strong,
+
 sub,
 sup,
 tt,
 var,
-b,
+
 u,
 i,
 center,
@@ -139,7 +139,11 @@ a {
 }
 
 html{
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
+}
+
+button{
+  cursor: pointer;
 }
 
 body.light{

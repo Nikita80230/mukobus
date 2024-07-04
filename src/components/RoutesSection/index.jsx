@@ -4,7 +4,7 @@ import Container from "../Container";
 import BookButton from "../BookButton";
 import Arrow from "../../assets/images/arrow.inline.svg";
 
-const RoutesSection = () => {
+const RoutesSection = ({ handleToggleModal }) => {
   return (
     <StyledRoutesSection>
       <Container>
@@ -52,7 +52,7 @@ const RoutesSection = () => {
               Амстердам
             </span>
           </div>
-          <BookButton />
+          <BookButton handleToggleModal={handleToggleModal} />
         </div>
       </Container>
     </StyledRoutesSection>

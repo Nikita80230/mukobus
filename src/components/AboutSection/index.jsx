@@ -14,7 +14,7 @@ import mobileAboutSectionImg4 from "../../assets/images/mobileAboutSection4.png"
 import { StyledAboutSection } from "./styled";
 import BookButton from "../BookButton";
 
-const AboutSection = () => {
+const AboutSection = ({ isModalOpened, handleToggleModal }) => {
   return (
     <StyledAboutSection id="about">
       <Container>
@@ -63,7 +63,10 @@ const AboutSection = () => {
               щоб ваша подорож була приємною та безпроблемною. Виберіть нас, і
               ваша подорож стане незабутньою пригодою!
             </p>
-            <BookButton />
+            <BookButton
+              handleToggleModal={handleToggleModal}
+              isModalOpened={isModalOpened}
+            />
           </div>
         </div>
       </Container>

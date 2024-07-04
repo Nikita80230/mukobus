@@ -50,7 +50,7 @@ const ContactsSection = () => {
             <div className="iconsWrapper">
               <a
                 className="navigationLink"
-                href="https://t.me/"
+                href="https://t.me/+380505298891"
                 // TODO:
                 target="_blank"
               >
@@ -58,14 +58,14 @@ const ContactsSection = () => {
               </a>
               <a
                 className="navigationLink"
-                href="https://wa.me/+380985589464"
+                href="https://wa.me/+380505298891"
                 target="_blank"
               >
                 <WhatsApp className="contactIcon" />
               </a>
               <a
                 className="navigationLink"
-                href="viber://chat?number=+380985589464"
+                href="viber://chat?number=+380505298891"
                 target="_blank"
               >
                 <Viber className="contactIcon" />
@@ -74,19 +74,13 @@ const ContactsSection = () => {
             <div className="contactNumbers">
               <ul className="contactNumbersList">
                 <li className="contactNumbersItem">
-                  <a
-                    className="contactNumberLink"
-                    href="tel:+38 (093) 351 8747"
-                  >
+                  <a className="contactNumberLink" href="tel:+380933518747">
                     +38 (093) 351 8747
                   </a>
                 </li>
                 <li className="contactNumbersItem">
-                  <a
-                    className="contactNumberLink"
-                    href="tel:+38 (098) 558 9464"
-                  >
-                    +38 (098) 558 9464
+                  <a className="contactNumberLink" href="tel:+380985589464">
+                    +38 (050) 529 8891
                   </a>
                 </li>
               </ul>
