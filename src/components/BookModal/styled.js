@@ -155,6 +155,7 @@ export const StyledBookModal = styled.div`
 
   @media (max-width: 564px) {
     .modal {
+      overflow: auto;
       position: absolute;
       top: 50%;
       left: 50%;
