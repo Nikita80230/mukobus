@@ -50,7 +50,7 @@ const ContactsSection = () => {
             <div className="iconsWrapper">
               <a
                 className="navigationLink"
-                href="https://t.me/+380505298891"
+                href="https://t.me/+380960840062"
                 // TODO:
                 target="_blank"
               >
@@ -58,14 +58,14 @@ const ContactsSection = () => {
               </a>
               <a
                 className="navigationLink"
-                href="https://wa.me/+380505298891"
+                href="https://wa.me/+380960840062"
                 target="_blank"
               >
                 <WhatsApp className="contactIcon" />
               </a>
               <a
                 className="navigationLink"
-                href="viber://chat?number=+380505298891"
+                href="viber://chat?number=+380960840062"
                 target="_blank"
               >
                 <Viber className="contactIcon" />
