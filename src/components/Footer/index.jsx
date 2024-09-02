@@ -19,18 +19,12 @@ const Footer = () => {
               <h3 className="contactUsTitle">Подзвони нам</h3>
               <ul className="contactUsList">
                 <li className="contactUsItem">
-                  <a
-                    className="contactUsNumberLink"
-                    href="tel:+38 (093) 351 8747"
-                  >
-                    +38 (093) 351 8747
+                  <a className="contactUsNumberLink" href="tel:+380960840062">
+                    +38 (096) 084 0062
                   </a>
                 </li>
                 <li className="contactUsItem">
-                  <a
-                    className="contactUsNumberLink"
-                    href="tel:+38 (098) 558 9464"
-                  >
+                  <a className="contactUsNumberLink" href="tel:+380985589464">
                     +38 (098) 558 9464
                   </a>
                 </li>
