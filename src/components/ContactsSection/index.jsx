@@ -74,13 +74,13 @@ const ContactsSection = () => {
             <div className="contactNumbers">
               <ul className="contactNumbersList">
                 <li className="contactNumbersItem">
-                  <a className="contactNumberLink" href="tel:+380933518747">
-                    +38 (093) 351 8747
+                  <a className="contactNumberLink" href="tel:+380960840062">
+                    +38 (096) 084 00 62
                   </a>
                 </li>
                 <li className="contactNumbersItem">
                   <a className="contactNumberLink" href="tel:+380985589464">
-                    +38 (050) 529 8891
+                    +38 (098) 558 94 64
                   </a>
                 </li>
               </ul>
