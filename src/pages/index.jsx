@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <PageLayout
-      title="FlixNikBus | Міжнародні пасажирські перевезення"
+      title="MukoBus | Міжнародні пасажирські перевезення"
       description="Ми забезпечуємо найвищий рівень сервісу у міжнародних перевезеннях пасажирів"
     >
       <StyledHomePage>

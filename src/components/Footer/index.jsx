@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="topFooter">
             <div className="logo">
               <Link className="logoLink" to={routes.HOME}>
-                Flixnikbus
+                MukoBus
               </Link>
             </div>
             <div className="contactUs">
@@ -34,7 +34,7 @@ const Footer = () => {
 
           <div className="bottomFooter">
             <span className="bottomFooterSpan">
-              Copyright © 2024 Flixnikbus | All Rights Reserved{" "}
+              Copyright © 2024 MukoBus | All Rights Reserved{" "}
             </span>
           </div>
         </div>

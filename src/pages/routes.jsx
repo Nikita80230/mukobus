@@ -21,7 +21,7 @@ const RoutesPage = () => {
 
   return (
     <PageLayout
-      title="FlixNikBus | flixnikbus Маршрути "
+      title="MukoBus | mukoBus Маршрути "
       description="Україна - Польща - Німеччина - Нідерланди"
     >
       <StyledRoutesPage>

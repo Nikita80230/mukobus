@@ -56,7 +56,7 @@ const Header = ({ isLightTheme }) => {
         <div className="header">
           <div className="logo">
             <Link className="logoLink" to={routes.HOME}>
-              Flixnikbus
+              MukoBus
             </Link>
           </div>
           <nav className="navigation">
