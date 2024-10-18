@@ -1,10 +1,17 @@
 import React from "react";
+import ImageGallery from "react-image-gallery";
+
 import Container from "../Container";
+import BookButton from "../BookButton";
 
 import aboutSectionImg1 from "../../assets/images/about1.png";
 import aboutSectionImg2 from "../../assets/images/about2.png";
 import aboutSectionImg3 from "../../assets/images/about3.png";
 import aboutSectionImg4 from "../../assets/images/about4.png";
+import aboutSectionImg5 from "../../assets/images/about5.png";
+import aboutSectionImg6 from "../../assets/images/about6.png";
+import aboutSectionImg7 from "../../assets/images/about7.png";
+import aboutSectionImg8 from "../../assets/images/about8.png";
 
 import mobileAboutSectionImg1 from "../../assets/images/mobileAboutSection1.png";
 import mobileAboutSectionImg2 from "../../assets/images/mobileAboutSection2.png";
@@ -12,7 +19,68 @@ import mobileAboutSectionImg3 from "../../assets/images/mobileAboutSection3.png"
 import mobileAboutSectionImg4 from "../../assets/images/mobileAboutSection4.png";
 
 import { StyledAboutSection } from "./styled";
-import BookButton from "../BookButton";
+import "react-image-gallery/styles/css/image-gallery.css";
+
+const images = [
+  {
+    original: aboutSectionImg1,
+    thumbnail: aboutSectionImg1,
+    originalWidth: "650px",
+    originalHeight: "704px",
+  },
+  {
+    original: aboutSectionImg2,
+    thumbnail: aboutSectionImg2,
+    originalWidth: "650px",
+    originalHeight: "704px",
+  },
+  {
+    original: aboutSectionImg3,
+    thumbnail: aboutSectionImg3,
+    originalWidth: "650px",
+    originalHeight: "704px",
+  },
+  {
+    original: aboutSectionImg4,
+    thumbnail: aboutSectionImg4,
+    originalWidth: "650px",
+    originalHeight: "704px",
+  },
+  {
+    original: aboutSectionImg5,
+    thumbnail: aboutSectionImg5,
+    originalWidth: "650px",
+    originalHeight: "704px",
+    thumbnailWidth: "92px",
+    thumbnailHeight: "106px",
+  },
+  {
+    original: aboutSectionImg6,
+    thumbnail: aboutSectionImg6,
+    originalWidth: "650px",
+    originalHeight: "704px",
+    thumbnailWidth: "92px",
+    thumbnailHeight: "106px",
+    thumbnailWidth: "92px",
+    thumbnailHeight: "106px",
+  },
+  {
+    original: aboutSectionImg7,
+    thumbnail: aboutSectionImg7,
+    originalWidth: "650px",
+    originalHeight: "704px",
+    thumbnailWidth: "92px",
+    thumbnailHeight: "106px",
+  },
+  {
+    original: aboutSectionImg8,
+    thumbnail: aboutSectionImg8,
+    originalWidth: "650px",
+    originalHeight: "704px",
+    thumbnailWidth: "92px",
+    thumbnailHeight: "106px",
+  },
+];
 
 const AboutSection = ({ isModalOpened, handleToggleModal }) => {
   return (
@@ -20,7 +88,8 @@ const AboutSection = ({ isModalOpened, handleToggleModal }) => {
       <Container>
         <div className="about">
           <div className="imgGrid">
-            <img
+            <ImageGallery items={images} />
+            {/* <img
               className="img"
               src={mobileAboutSectionImg1}
               alt="image of bus"
@@ -39,7 +108,7 @@ const AboutSection = ({ isModalOpened, handleToggleModal }) => {
               className="img"
               src={mobileAboutSectionImg4}
               alt="image of bus"
-            />
+            /> */}
           </div>
           <div className="aboutInfo">
             <h2 className="aboutTitle">Про нас</h2>

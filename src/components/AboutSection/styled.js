@@ -22,6 +22,11 @@ export const StyledAboutSection = styled.section`
     width: 100%;
   }
 
+  .image-gallery {
+    max-width: 610px;
+    width: 100%;
+  }
+
   .img {
     display: block;
 
