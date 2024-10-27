@@ -89,26 +89,6 @@ const AboutSection = ({ isModalOpened, handleToggleModal }) => {
         <div className="about">
           <div className="imgGrid">
             <ImageGallery items={images} />
-            {/* <img
-              className="img"
-              src={mobileAboutSectionImg1}
-              alt="image of bus"
-            />
-            <img
-              className="img"
-              src={mobileAboutSectionImg2}
-              alt="image of bus"
-            />
-            <img
-              className="img"
-              src={mobileAboutSectionImg3}
-              alt="image of bus"
-            />
-            <img
-              className="img"
-              src={mobileAboutSectionImg4}
-              alt="image of bus"
-            /> */}
           </div>
           <div className="aboutInfo">
             <h2 className="aboutTitle">Про нас</h2>
